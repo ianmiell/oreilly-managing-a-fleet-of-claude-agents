@@ -1,0 +1,26 @@
+2026-11-10T09:00:01 INFO [web] server started on port 8080
+2026-11-10T09:00:02 INFO [db] connected to primary
+2026-11-10T09:01:15 DEBUG [web] GET /health 200
+2026-11-10T09:02:40 INFO [web] GET /orders 200
+2026-11-10T09:03:05 WARN [cache] miss rate above 40%
+2026-11-10T09:04:12 INFO [web] GET /orders 200
+2026-11-10T09:05:33 ERROR [db] connection refused
+2026-11-10T09:05:34 INFO [db] retrying connection
+2026-11-10T09:05:36 ERROR [db] connection refused
+2026-11-10T09:05:40 INFO [db] connected to replica
+2026-11-10T09:06:01 WARNING [db] running on replica, writes disabled
+2026-11-10T09:07:18 INFO [web] POST /orders 503
+2026-11-10T09:07:19 ERROR [orders] could not save order 1182: database is read-only
+2026-11-10T09:08:44 INFO [web] GET /orders 200
+2026-11-10T09:09:02 DEBUG [cache] evicted 120 keys
+this line is not in the log format and should be skipped
+2026-11-10T09:10:30 INFO [web] POST /orders 503
+2026-11-10T09:10:31 ERROR [orders] could not save order 1183: database is read-only
+2026-11-10T09:12:00 CRITICAL [db] primary unreachable for 6 minutes
+2026-11-10T09:12:05 INFO [ops] paged on-call
+2026-11-10T09:15:47 INFO [db] connected to primary
+2026-11-10T09:15:48 INFO [db] writes enabled
+2026-11-10T09:16:10 INFO [web] POST /orders 201
+2026-11-10T09:17:22 WARN [cache] miss rate above 40%
+2026-11-10T09:18:03 INFO [web] GET /orders 200
+2026-11-10T09:20:00 INFO [web] GET /health 200
